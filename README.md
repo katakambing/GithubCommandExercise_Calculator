@@ -13,7 +13,7 @@ This project is designed as a learning example for students to practice programm
 - Error handling (division by zero, negative inputs for square root/factorial)
 
 ---
-Common GitHub Commands for Students
+## Common GitHub Commands for Students
 ===================================
 
 This guide explains the most useful GitHub commands with examples using the Complex-Calculator-C project.
@@ -23,6 +23,7 @@ This guide explains the most useful GitHub commands with examples using the Comp
 ------------------------------------------------------------
 Command:
     git init
+    
 Explanation:
     Creates a new Git repository in the current folder.
 Example:
