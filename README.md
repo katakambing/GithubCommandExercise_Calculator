@@ -13,10 +13,3 @@ This project is designed as a learning example for students to practice programm
 - Error handling (division by zero, negative inputs for square root/factorial)
 
 ---
-
-## 🛠️ Compilation & Execution
-To compile and run the program:
-
-```bash
-gcc calculator.c -o calculator
-./calculator
