@@ -11,6 +11,7 @@ double divide(double a, double b);
 double power(double base, double exp);
 double squareRoot(double num);
 double factorial(int n);
+double logarithm(double num); // Added Logarithm prototype
 
 int main() {
     int choice;
@@ -77,6 +78,16 @@ int main() {
                     printf("Result: %.0lf\n", result);
                 }
                 break;
+            case 8: // Added Logarithm case
+                printf("Enter a number: ");
+                scanf("%lf", &num1);
+                if (num1 <= 0) {
+                    printf("Error: Logarithm is only defined for positive numbers!\n");
+                } else {
+                    result = logarithm(num1);
+                    printf("Result: %.2lf\n", result);
+                }
+                break;
             case 0:
                 printf("Exiting program...\n");
                 exit(0);
@@ -97,6 +108,7 @@ void menu() {
     printf("5. Power\n");
     printf("6. Square Root\n");
     printf("7. Factorial\n");
+    printf("8. Logarithm (Base 10)\n"); // Added to menu
     printf("0. Exit\n");
 }
 
@@ -113,3 +125,5 @@ double factorial(int n) {
     }
     return fact;
 }
+// Added Logarithm function
+double logarithm(double num) { return log10(num); }
